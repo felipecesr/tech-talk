@@ -4,20 +4,20 @@ import CustomerForm from './CustomerForm'
 
 describe('CustomerForm', () => {
   it('renders a form', () => {
-    const fistname = 'Ashley'
-    render(<CustomerForm fistname={fistname} />)
+    const firstname = 'Ashley'
+    render(<CustomerForm firstname={firstname} />)
     expect(screen.getByRole('form')).toBeInTheDocument()
   })
 
   it('renders the first name field', () => {
-    const fistname = 'Ashley'
-    render(<CustomerForm fistname={fistname} />)
+    const firstname = 'Ashley'
+    render(<CustomerForm firstname={firstname} />)
     expect(screen.getByLabelText(/first name/i)).toBeInTheDocument()
   })
 
   it('has a submit button', () => {
-    const fistname = 'Ashley'
-    render(<CustomerForm fistname={fistname} />)
+    const firstname = 'Ashley'
+    render(<CustomerForm firstname={firstname} />)
     expect(screen.getByRole('button')).toBeInTheDocument()
   })
 })

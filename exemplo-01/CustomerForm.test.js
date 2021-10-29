@@ -4,8 +4,8 @@ import CustomerForm from './CustomerForm'
 
 describe('CustomerForm', () => {
   it('renders a form', () => {
-    const fistname = 'Ashley'
-    render(<CustomerForm fistname={fistname} />)
+    const firstname = 'Ashley'
+    render(<CustomerForm firstname={firstname} />)
     expect(screen.getByRole('form')).toBeInTheDocument()
   })
 })
